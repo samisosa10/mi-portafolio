@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tablet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAAD8/PyLi4vt7e1GRkbd3d0EBATQ0ND5+flnZ2d+fn5WVlZdXV2ZmZn39/cjIyNOTk40NDQ7Ozunp6fx8fHn5+d0dHTW1tbExMSwsLCNjY1tbW19fX27u7uFhYUtLS0bGxswMDDJycklJSUPDw+fn59JSUm/v785OTm1tbWp5EfdAAAHv0lEQVR4nO2da2OiOhCGQ0QwiiDIVVC0eKv//weeJOBqu70YZJLjOfNsu90PK8mbkMlkMkkJQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAE+Z9CCePflPAfP5M3k2FobF4qR4s8WRShUiEhQcrJ49msrrOpF473i3uswTgs13nwW4MOKJAx0YnEKVbVKVwOKOQn9qUmgVwib8s0vVTRrXTXvf50AbS53fdaUycywoLVPLpJa1W5fyscSK58jHjy1tGkcJKdPin404VfNv/TCrsyXOsMKowySgM+Bptyywf+ABXvIXQDKlCYTkbSzVKUBTHaftMH3odiGgzS7CBfF/0KhcBdDqyQsEsoi4KxmL8JdK0prC3lPRhvu9KM9KF1KED10YDES/267hWGDNZrS1Z7kwIP1tKBFUidk4l3846SwfZh4g0zffemSmDtTOIP5oT1gBccNpQRqD4Uq6XzG5BX/Yg+XrBXEDB9cq0bzAxNEV2Z3gRKnYSvPPN2ojcgUbZrVcgFN6ChSSvLzDx/ED7+0m+jJoACWfEm29PIOIwyh13jQmCWhpSq3df6rs+2yC4ar8+wI7AjXfaprNtV0gtD7xGqWV3XsysjJ8+d1IabIe6hsbpA8YGxd276xx2o/NYTQkw99SHIF3NZal8r+0glKftoTKQ0SpgOhXEff218DkhnAB+v4ic1VMoDddaoDG/XigqlD5JrGUDPI9rQ2SsJlFb0vQGdnwdEhNdmapO9HLIFoUFguvIPIfqwx7Kpsvn7/SoK6UXRJeX/9c2Rkf9XgJGA+Jayd+LrmacHgdJ0q/aCutCh6YFhxN+pKeSEwPGGIeGGZqo+21fa9mqfh9JGvQsXjelqK7FR78Kt09qZ218PY6DznVDd6c7apAL1ypp4uamzVe/D+Prh9uth9MsTjHgXqu6G+gF32No1BVV5S7mDCCfkO5xxj+jMuz9hrB2BKrMGVWqOYaCkURfY/f9FtOV/onD6MFU1rfzNpskduytdeFSg8ghJ1gZCiIvtuDymYu0ssnaAJdqh1hDiXUme7zySVfacQF5A7OqOA7dBSFHivCEMdoFC+SCYaY8Cd8lBB5EeNIGeIBnJ96JE3akzrojli65cFMDGlZGN0R1RLjGXsUQ4mWxqUqDoyZMDu+PE5kYFuoeDOwIVSE0rFAOyAfXHuULX1Jaa1SVyXmSwHwbuUsSuoQyvG1UAaGmo8LvFHqxJhcsU7i3lDgWLox6Lp6GQzlQWwA1Dse9jH9+FTTMlkSsUCaWASTSUJE3mGdInyRKmIbbhFCu/rr0xNOF6VI9G9Y1ylUJruyIaMbXB+aJg+Miy3EvvIi7wfBakJzhFu61qPSGU+0U9Jbo2WeVmuqZYH/3wb7h2bd9N2Dyyn8tn0C8Npd0BNdBSvitZMX+jVzFdFxoDPALeDjuniMuRfsq4yR1oOyqzaFamnDXpy4iAKaRCbrM3b2YT170CeqTMDKqTbbs4Q45G/uDaqEKxrghtuMEonmtUoQy1W2cKtm9BZRaNYYmWVQMaVP7gNDJ8RMay5pAKKQ3i7l0xxxT4DInNF/cHgwpdawS4uyYfXPTIfR6UFeD2ofR8g030ey0AWYLOFu26t5BnRvvHvb89pP/AR10rAz4xKkUW8y64rphfei/K7dU+rtyygA7TiGjiRn135tokH36oa4xSArxK7G5oYZdjFD15eYlywor4yydaQlG8hICkad5cyvXsQdaz9Xy8FLxHh7sqK2qUR0ahF4ni+UGXtdNvSHDHkk1WilnGUuE8kClDrwBvp7iHwuMLJeEyslJWaFmabqIZBBpk6gNxCj0ZDggfTT22r46vc5yBv6WNqjzXGjuvlAzPh6H6S/rFRtS/FprO1RVOXuXkm4Cmb8oKF/YLCZQxLVW3bfRSAp2xssB9AZgnNChBwNqjb2pnbK25/SqWVEQlV+9KES15EHBl7vSFIiLp6KSeRr1NNeUNPA8NkuzaLw+/oq44VQS/vB+IZt4GMRQ60bV2BYXewifXWNQTg0EsnfPj+/21mI9x4HZmIC3fV+2q76nH5Pk67BeGWg2k5LuaXbsuSVInzyex7/tH/2+O1XQ6/4Fd2x89IolhAG1lhL6kOM7D5U65dve4vTrQteoEPA+Dpv7pvsxe0WC3bxxxD5itR2Xkhybn+wVr342LzoCqfVx8pgacJuQl3dQuje3GiHzrPeSNIdJVsjNzm4aiC9cMVCE3MdzJMrVpKC97ziFvLRNb2xnUjdwPSbRcn0IqZMQuu5IMaJNfc9h7gikptEu7l+hakQ3scOfGrmBtfYP9BPher6Q0ebSCW5lLANyFzsKYQjFPvMUJgXRJqTxPqdeMftjmP+ViJw+sD8Vc3+x1W9HWvLT+XQZ+2zohF/XroJ5V+MdzHV9S2NgTFUGxjYn8IFnkorQDCnz0XjTfxcxFwdbYdwLW3ZAICKNkoues4cdGXFaF3V4vq+OI0wjGlt6e+dnjPWWrVGvQMCk1/c6fw9ILqzjXYD0/ESQbH+KXH+y22+1+tx978+lIxLAmTpokIoXFRFibEWdw8uSLgmhrWoDvn/mrVKgbb66nmG6n/OjtmiyIAhEEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAE+W/wD1jjg+XHiED+AAAAAElFTkSuQmCC">
+    <title>Samisosa</title>
+</head>
+
+<body>
+    <header>
+        <p>Samisosa</p>
+        <button class="burger-btn"><i class="bi bi-list"></i></button>
+        <nav class="nav-burger ">
+            <button class="close-btn"><i class="bi bi-x"></i></button>
+
+
+            <ul class="nav-list">
+                <li><a href="#home"> <span>#</span>Home</a></li>
+                <li><a id="projects-a" href="#projects"> <span>#</span>Projects</a></li>
+                <li><a href="#skills"> <span>#</span>Skills</a></li>
+                <li><a href="#contact-me"> <span>#</span>Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <section class="about-me-section" id="home">
+
+            <div class="">
+                <h1>
+                    Hi, I'm Samisosa, <span>I'm a Software Developer</span>
+                </h1>
+                <p>
+                    My dedication to the craft allows me to create innovative solutions to complex problems, making me a
+                    valuable asset on any software development team.
+                </p>
+
+                <div class="phrase-container">
+
+                    <img class="comillas" src="assets/comillas.png" alt="">
+                    <p>
+                        It is not the car that drives, it is the driver who does to drive the car
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="about-me-section--img">
+                <img src="assets/foto-samisosa.jpg" alt="">
+
+                <p class="currently-detail">Currently Working on ContentCraft as a Temp</p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="projects-section" id="projects">
+            <h2><span>#</span>Projects</h2>
+            <p class="swipe-right">--Swipe Right</p>
+            <div class="cards-container">
+
+
+                <div class="card">
+                    <div class="img-project">
+                        <img src="/assets/Captura-batatabit.PNG" >
+                    </div>
+                    <p>HTML CSS</p>
+                    <h5>Batatabit</h5>
+                    <a href="https://luxury-paletas-9472b7.netlify.app/" target="_blank" alt="clone de batatabit by samisosa" >see more</a>
+                </div>
+
+                <div class="card">
+                    <div class="img-project">
+                        <img src="/assets/Captura-formulario.PNG"   alt="formulario by samisosa">
+                    </div>
+                    <p>HTML CSS</p>
+                    <h5>Sing up Form</h5>
+                    <a href="https://samisosa10.github.io/Formulario_Responsive/" target="_blank">see more</a>
+                </div>
+
+                <div class="card">
+                    <div class="img-project">
+                        <img src="assets/Captura-trello (2).PNG"  >
+                    </div>
+                    <p>HTML CSS JS BOOTSTRAP</p>
+                    <h5>Trello</h5>
+                    <a href="challenge/index.html" target="_blank" alt="clone de trello by samisosa">see more</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skills-section" id="skills">
+
+            <h2 >
+                <span>#</span>Skills
+            </h2>
+            <div class="skills-section--imgs-container">
+                
+                <div class="img-skills">
+                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="">
+                    
+                </div>
+                <div class="img-skills">
+                    <img class="" src="https://victorroblesweb.es/wp-content/uploads/2018/04/git.png" alt="">
+
+                </div>
+                <div class="img-skills">
+
+                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="">
+                </div>
+                
+                <div class="img-skills">
+                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/640px-Figma-logo.svg.png" alt="">
+
+                </div>
+                <div class="img-skills">
+                    <img class="" src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" alt="">
+
+                </div>
+                <div class="img-skills">
+                    <img class="" src="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png" alt="">
+
+                </div>
+                <div class="img-skills">
+                    <img class="" src="https://i0.wp.com/www.the-automator.com/wp-content/uploads/2021/03/VS-Code-1.png" alt="">
+                    
+                </div>
+                <div class="img-skills">
+                    <img class="" src="https://cdn.pixabay.com/photo/2013/07/13/14/17/united-kingdom-162452_640.png" alt="">
+
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <section class="contact-me-section" id="contact-me">
+            <h2>
+                <span>#</span>Contact me
+            </h2>
+            <p>
+                I’m interested in freelance opportunities.
+                However, if you have other request or question,
+                don't hesitate to contact me
+            </p>
+
+            <label for="email">
+
+                <input type="email" id="email" placeholder="Enter your Email to Work" name="email">
+                <input class="button-submit" type="submit" value="Submit">
+            </label>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="text-and-media">
+            <p>Software Developer </p>
+
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/samuel-giraldo-46b69b287/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:samueldavidgiraldogutierrez@gmail.com" target="_blank">
+
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://github.com/samisosa10" target="_blank">
+                    <i class="bi bi-github"></i>
+
+                </a>
+            </div>
+        </div>
+        <p class="copyright">
+            © Copyright 2023. Made by Samisosa
+        </p>
+    </footer>
+
+
+
+    <script src="burger.js"></script>
+
+</body>
+
+</html>
