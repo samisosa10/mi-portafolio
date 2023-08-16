@@ -19,6 +19,7 @@ header {
   position: sticky;
   top: 0;
   padding: 20px;
+  z-index: 30;
   background-color: var(--background);
 }
 
@@ -30,9 +31,11 @@ body {
   background-color: var(--background);
   padding-bottom: 10px;
 }
+
 .main {
   padding: 0 15px 15px 15px;
 }
+
 h1,
 h2 {
   color: #fff;
@@ -62,7 +65,6 @@ span {
   height: 100%;
 }
 
-
 .currently-detail {
   padding: 5px;
   border: 1px solid var(--purple);
@@ -84,8 +86,6 @@ span {
   text-decoration: none;
 }
 
-
-
 .cards-container {
   display: flex;
   gap: 20px;
@@ -102,6 +102,7 @@ span {
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
   position: relative;
+  z-index: 1;
   padding: 5px;
   top: -5px;
   font-size: 13px;
@@ -133,10 +134,12 @@ h5 {
 .skills-section {
   margin: 50px 0;
 }
+
 .skills-section h2 {
   border-bottom: 1px solid var(--purple);
   padding: 10px;
 }
+
 .skills-section--imgs-container{
   display: flex;
   justify-content: center;
@@ -169,6 +172,7 @@ h5 {
 .contact-me-section {
   margin: 20px 0;
 }
+
 .contact-me-section input {
   padding: 10px;
   width: 280px;
@@ -221,26 +225,35 @@ footer {
   position: relative;
   top: 20px;
 }
+
 .phrase-container {
   margin-top: 30px;
   padding: 10px;
   font-size: 13px;
   border: 1px solid var(--gray);
   position: relative;
+  z-index: 10;
 }
+
 .phrase-container p {
   color: #fff;
 }
+
 .comillas {
   position: absolute;
   top: -5px;
   width: 15px;
   background-color: var(--background);
+  
 }
 
 @media screen and (max-width: 550px) {
   .burger-btn {
     display: block;
+  }
+
+  header {
+    background-color: var(--background);
   }
 
   .nav-list {
@@ -252,18 +265,18 @@ footer {
   .nav-burger {
     visibility: hidden;
     position: absolute;
+    height: 200px;
+    z-index: 40;
     top: 0;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
     background-color: var(--background);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); 
   }
 
   .nav-burger-visible {
     visibility: visible;
   }
-
-  
 
   .close-btn {
     position: absolute;
