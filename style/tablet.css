@@ -6,6 +6,10 @@
     gap: 40px;
   }
 
+  .about-me-section--img{
+    max-height: 400px;
+  }
+
   .cards-container {
     justify-content: center;
   }
@@ -21,6 +25,7 @@
     overflow-x: hidden;
     gap: 50px;
   }
+
 
   header {
     position: inherit;

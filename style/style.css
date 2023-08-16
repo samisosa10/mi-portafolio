@@ -48,12 +48,11 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .about-me-section--img {
   max-width: 400px;
-  max-height: 400px;
   margin-top: 10px;
 }
 
