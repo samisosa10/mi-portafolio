@@ -252,9 +252,7 @@ footer {
     display: block;
   }
 
-  header {
-    background-color: var(--background);
-  }
+  
 
   .nav-list {
     flex-direction: column;
