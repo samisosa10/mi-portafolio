@@ -89,7 +89,7 @@ span {
 .cards-container {
   display: flex;
   gap: 20px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-top: 10px;
 }
 

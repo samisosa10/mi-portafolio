@@ -22,10 +22,9 @@
   }
 
   .cards-container {
-    overflow-x: hidden;
+  
     gap: 50px;
   }
-
 
   header {
     position: inherit;
