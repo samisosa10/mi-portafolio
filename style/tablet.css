@@ -1,28 +1,26 @@
-
 @media screen and (min-width: 758px) {
   .about-me-section {
     flex-direction: row;
     margin-bottom: 60px;
     gap: 40px;
     align-items: inherit;
-
   }
 
-  .phrase-container{
+  .phrase-container {
     max-width: inherit;
   }
 
-  .about-me-section--img{
+  .about-me-section--img {
     max-height: 400px;
   }
 
-  .cards-container {
+  /* .cards-container {
     justify-content: center;
-  }
+  } */
 
-  .swipe-right {
+  /* .swipe-right {
     display: none;
-  }
+  } */
 
   .img-project {
     width: 200px;

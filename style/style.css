@@ -94,13 +94,17 @@ span {
   padding: 10px;
   justify-content: start;
   /* justify-content: center; */
-  
-  
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
   min-width: 200px;
   border: 1px solid var(--gray);
+  overflow: auto;
+  overflow: hidden;
 }
 
 .card p {
@@ -133,7 +137,6 @@ h5 {
 .img-project img {
   object-fit: cover;
   width: 100%;
-  
 }
 
 .skills-section {
@@ -145,15 +148,15 @@ h5 {
   padding: 10px;
 }
 
-.skills-section--imgs-container{
+.skills-section--imgs-container {
   display: flex;
   justify-content: center;
-  
+
   /* flex-wrap: wrap;
   gap: 30px; */
 }
 
-.list-skills{
+.list-skills {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -251,15 +254,12 @@ footer {
   top: -5px;
   width: 15px;
   background-color: var(--background);
-  
 }
 
 @media screen and (max-width: 550px) {
   .burger-btn {
     display: block;
   }
-
-  
 
   .nav-list {
     flex-direction: column;
@@ -276,7 +276,7 @@ footer {
     right: 0;
     /* bottom: 0; */
     background-color: var(--background);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     /* padding: 10px; */
   }
 
